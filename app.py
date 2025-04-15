@@ -22,9 +22,7 @@ app.config['SECRET_KEY'] = 'your_super_secret_key'  # Replace with a strong key 
 #client = MongoClient("mongodb+srv://hemadiksitha:HV@hema.arbgjdb.mongodb.net/", tls=True, tlsAllowInvalidCertificates=True)
 
 client = MongoClient(
-    "mongodb+srv://hemadiksitha:HV@hema.arbgjdb.mongodb.net/?retryWrites=true&w=majority",
-    tls=True,
-    tlsAllowInvalidCertificates=True
+    "mongodb+srv://hemadiksitha:HV@hema.arbgjdb.mongodb.net/?retryWrites=true&w=majority&tls=true"
 )
 
 db = client.mcq_quiz
