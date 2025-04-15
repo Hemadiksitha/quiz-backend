@@ -19,7 +19,7 @@ CORS(app)
 app.config['SECRET_KEY'] = 'your_super_secret_key'  # Replace with a strong key in production
 
 # MongoDB setup
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb+srv://hemadiksitha:HV@hema.arbgjdb.mongodb.net/")
 db = client.mcq_quiz
 progress_collection = db.user_progress
 users_collection = db.users
