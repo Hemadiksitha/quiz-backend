@@ -37,7 +37,8 @@ try:
 except Exception as e:
     print(f"❌ MongoDB Connection Failed: {e}")
 
-DATASET_PATH = "../dataset"
+DATASET_PATH = os.path.join(os.path.dirname(__file__), 'dataset')
+#DATASET_PATH = "../dataset"
 
 # ✅ JWT Token Required Decorator
 def token_required(f):
